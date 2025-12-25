@@ -2500,7 +2500,7 @@
             background-attachment: scroll;
             background-repeat: no-repeat;
             background-color: #ffffff;
-            background-image: url(/images/material/bg_image4.webp);
+            background-image: url(../images/material/bg_image4.webp);
             padding: 30px 0px;
             background-attachment: fixed;
         }
@@ -2531,6 +2531,7 @@
             color: white;
             z-index: 1;
             margin-bottom: 0px;
+             font-size: 35px;
         }
 
         .call_to_action_home .call_to_action_left a {
@@ -2621,6 +2622,7 @@
         .call_to_action_left h2 {
             color: white;
             margin-bottom: 1rem;
+             font-size: 35px;
         }
 
         .call_to_action_parent {
@@ -2660,11 +2662,13 @@
 
         .process-section-box-bottom {
             padding: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
             padding-bottom: 0px;
         }
 
         .process-section-box-bottom h3 {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 500;
             margin: 0;
             display: flex;
@@ -7102,6 +7106,11 @@ padding: 12px 12px;
             opacity: 1;
         }
 
+        .download-view-model-popup.showModel .download-view-model-inner section {
+            transform: scale(1);
+            opacity: 1;
+        }
+
         .close_attachment_view svg {
             width: 14px;
             height: 14px;
@@ -7332,6 +7341,12 @@ padding: 12px 12px;
             overflow: hidden;
             align-items: center;
         }
+        .download-view-model-popup.showModel .download-view-model-inner {
+            opacity: 1;
+            visibility: visible;
+            overflow: hidden;
+            align-items: center;
+        }
 
         .downlods-view-model-popup.showModel .downlods-view-model-inner {
             opacity: 1;
@@ -7381,6 +7396,12 @@ padding: 12px 12px;
 
 
         .action-view-model-popup.showModel .action-view-model-popup-backdrop {
+            opacity: 1;
+            visibility: visible;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+        .download-view-model-popup.showModel .download-view-model-popup-backdrop {
             opacity: 1;
             visibility: visible;
             overflow: hidden;
@@ -8272,6 +8293,19 @@ padding: 12px 12px;
             z-index: 5600;
             transition: opacity 0.3s ease, visibility 0.3s ease;
         }
+        .download-view-model-popup-backdrop {
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.48);
+            z-index: 5600;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
 
         .downlods-view-model-popup-backdrop {
             opacity: 0;
@@ -8381,6 +8415,17 @@ padding: 12px 12px;
 
         .call_to_action.slideDoorsMain h2 {
             margin: 0;
+                font-size: 2rem;
+        }
+    
+        .readmore_content_inner ul li strong{
+                font-weight: 500;
+    font-size: 16px;
+        color: #333;
+        }
+
+        .readmore_content_inner ul {
+              margin-bottom: 10px;
         }
 
         .images-box-faq-content-1-right-video video {
@@ -9542,4 +9587,22 @@ padding: 12px 12px;
      text-transform: capitalize!important;
 }
 
+/* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .carousel-caption h1 {
+                font-size: 1.8rem;
+            }
+
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .product-card img {
+                height: 200px;
+            }
+        }
       

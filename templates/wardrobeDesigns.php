@@ -293,7 +293,7 @@ Template Name: wardrobsdesign
                     if (have_rows('section_6_listing_2')) {
                         while (have_rows('section_6_listing_2')) {
                             the_row(); ?>
-                            <div class="projects-list-gallery-b-box <?php echo trim(get_sub_field('section_6_listing_2_class_name')); ?>">
+                            <div class="projects-list-gallery-b-box <?php echo sanitize_title(get_sub_field('section_6_listing_2_class_name')); ?>">
                                 <div class="projects-list-gallery-b-box-images">
                                     <a href="">
                                         <img src="<?php echo get_sub_field('section_6_listing_2_image'); ?>" alt="">

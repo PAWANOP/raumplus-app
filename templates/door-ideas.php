@@ -1,6 +1,7 @@
 <?php
 get_header('header');
 /*
+Template Post Type: door_solutions
 Template Name: Door Ideas
 */
 ?>
@@ -24,7 +25,7 @@ Template Name: Door Ideas
         ?>
     </div>
 </div>
-<section class="call_to_action slideDoorsMain">
+<section class="call_to_action slideDoorsMain" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/images/bg_image4.webp');">
     <div class="container">
         <div class="call_to_action_parent">
             <div class="call_to_action_left">
