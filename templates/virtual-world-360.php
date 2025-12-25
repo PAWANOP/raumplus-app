@@ -5,7 +5,7 @@ Template Name: virtual world
 */
 ?>
 <!-- Hero Slider -->
-<section id="aboutUsContainer" class="aboutUsContainer">
+<section id="aboutUsContainer" class="aboutUsContainer" style="background-image: url('<?php echo get_field('banner_image'); ?>');">
   <div class="heading-top">
 
   </div>
@@ -22,9 +22,9 @@ Template Name: virtual world
   <div class="container">
     <div class="projects-list-section-inner-heading">
       <div class="projects-list-section-inner-heading-right">
-        <h2 class="text-uppercase">VIRTUAL - <span> VISIONARY </span> - RESPONSIBLE</h2>
+        <h2 class="text-uppercase"><?php echo get_field('section_1_heading');?> <span> <?php echo get_field('section_1_color_heading');?> </span> <?php echo get_field('section_1_normal_heading');?></h2>
       </div>
-      <p>Experience the new dimension of product presentation on a 360° tour of the virtual raumplus house. At your desk or on the sofa and from anywhere in the world. We look forward to your digital visit and are always available for information and questions.
+      <p><?php echo get_field('section_1_subheading');?>
       </p>
     </div>
   </div>
@@ -33,7 +33,7 @@ Template Name: virtual world
   <div class="container">
     <div class="virtual-tour-360-box-heading-inner">
       <div class="virtual-tour-360-box-heading-left">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/image_logo.png" alt="">
+        <img src="<?php echo get_field('section_1_image');?>" alt="">
       </div>
       <div class="virtual-tour-360-box-heading-right">
         <div class="select-menu">
@@ -130,13 +130,13 @@ Template Name: virtual world
     <div class="form-section-bottom-side-inner">
       <div class="form-section-bottom-left">
         <div class="form-section-subtitle">
-          <span> Virtual Tour</span>
+          <span> <?php echo get_field('section_2_title');?></span>
         </div>
         <div class="form-section-h2">
-          <h2>Have A <span>Project In Mind? </span> Let’s Make It Happen </h2>
+          <h2><?php echo get_field('section_2_heading');?> <span><?php echo get_field('section_2_color_heading');?> </span> <?php echo get_field('section_2_normal_heading');?> </h2>
         </div>
         <div class="form-section-p">
-          <p>Elegant partition wall for a corporate office.</p>
+          <p><?php echo get_field('section_2_subheading');?></p>
         </div>
       </div>
       <div class="form-section-bottom-right">

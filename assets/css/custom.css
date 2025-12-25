@@ -4,6 +4,7 @@
             padding: 0;
             color: #333;
         }
+        
 
         .navbar-expand-mobile-view .megamenu-content .dropdown-item, .navbar-expand-mobile-view a:hover{
              background-color: transparent;
@@ -3420,10 +3421,11 @@
         }
 
         .why-choose-item h5 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #333;
+      font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+    margin-bottom: 0px;
         }
 
         .why-choose-item p {
@@ -3722,9 +3724,18 @@
             background: white;
         }
 
-        .doots-ideas-main-why-choose .why-choose-item {
+        /* .doots-ideas-main-why-choose .why-choose-item {
             box-shadow: unset !important;
             border: 1px solid #c39a384f;
+        } */
+
+        .owl-carousel-why-choose .col-md-3{
+            width: 100%;
+                margin-bottom: 4px;
+        }
+
+         .owl-carousel-why-choose .owl-nav{
+            display: none;
         }
 
         .doots-ideas-main-why-choose .why-choose-item:hover {
@@ -3736,9 +3747,9 @@
             padding-top: 60px;
         }
 
-        .doots-ideas-main-why-choose .why-choose-item {
+        /* .doots-ideas-main-why-choose .why-choose-item {
             text-align: left;
-        }
+        } */
 
         .slide-doors-choose.why-choose {
             background-color: #fff;
@@ -9527,21 +9538,8 @@ padding: 12px 12px;
       color: white;
    }
 
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .carousel-caption h1 {
-                font-size: 1.8rem;
-            }
+   h5,h6,h4 {
+     text-transform: capitalize!important;
+}
 
-            .carousel-caption p {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .product-card img {
-                height: 200px;
-            }
-        }
+      

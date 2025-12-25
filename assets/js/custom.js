@@ -290,6 +290,14 @@ $(document).on("click", ".load-more-blog a", function(e) {
   return false;
 });
 
+var owl = $(".owl-carousel-why-choose");
+owl.owlCarousel({
+  items: 4,
+  margin: 20,
+  loop: true,
+  nav: true,
+});
+
 var owl = $(".owl-carousel-blog-main");
 owl.owlCarousel({
   items: 1,

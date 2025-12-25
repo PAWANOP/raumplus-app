@@ -84,7 +84,7 @@ Template Name: wardrobsdesign
 <section class="section-padding why-choose doots-ideas-main-why-choose">
     <div class="container">
         <h2 class="section-title"><?php echo get_field('section_2_heading'); ?></h2>
-        <div class="row">
+        <div class="row owl-carousel-why-choose">
             <?php
             if (have_rows('section_2_listing')) {
                 while (have_rows('section_2_listing')) {
@@ -93,7 +93,9 @@ Template Name: wardrobsdesign
                         <div class="why-choose-item">
                             <span><img src="<?php echo get_sub_field('section_2_listing_icon'); ?>" style="width: 55px;" alt=""></span>
                             <h5><?php echo get_sub_field('section_2_listing_title'); ?></h5>
-
+                            <div class="overlay-text">
+                                <p>All the designs are a combination of long-lasting performance.</p>
+                            </div>
                         </div>
                     </div>
             <?php }
@@ -273,9 +275,10 @@ Template Name: wardrobsdesign
                     while (have_rows('section_6_listing_1')) {
                         the_row();
                         $title = get_sub_field('section_6_listing_1_title');
+                        $filter = sanitize_title($title); 
                         $active_class = ($i == 0) ? 'active' : ''; // active only for first button
                 ?>
-                        <button class="btn <?php echo $active_class; ?>" data-filter="<?php echo esc_attr( trim($title) ); ?>">
+                        <button class="btn <?php echo $active_class; ?>" data-filter="<?php echo esc_attr($filter); ?>">
                             <?php echo esc_html($title); ?>
                         </button>
                 <?php

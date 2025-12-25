@@ -1,3 +1,21 @@
+  /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .carousel-caption h1 {
+                font-size: 1.8rem;
+            }
+
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .product-card img {
+                height: 200px;
+            }
+        }
 @media (max-width: 1200px) {
    .collapse.navbar-collapse{
       display: none!important;
