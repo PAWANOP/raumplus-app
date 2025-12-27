@@ -515,7 +515,7 @@
 
         .form-section-bottom-side {
             position: relative;
-            background-image: url(/images/material/h3-banner-5.jpg);
+            background-image: url(../images/material/h3-banner-5.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -1323,7 +1323,21 @@
         }
 
         .faq-list-content-inner-bottom p {
-            color: #59585d;
+               color: #59585d;
+    font-weight: 400;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 0px;
+        }
+
+        .faq-list-content-inner-bottom .read-more-link{
+            text-decoration: none;
+                color: #caa05c;
         }
 
         .testimonials-list-section-inner-heading-right p {
@@ -2289,15 +2303,18 @@
             position: relative;
         }
 
-        .timeline-section-box-slider .item-box-inner .elementor-timeline-content .elementor-timeline-description {
+        .timeline-section-box-slider .item-box-inner .elementor-timeline-content .elementor-timeline-description p  ,
+        .timeline-section-box-slider .item-box-inner .elementor-timeline-content .elementor-timeline-description p span {
             color: #59585d;
             font-weight: 400;
             display: -webkit-box;
             max-width: 100%;
-            -webkit-line-clamp: 5;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
             width: 100%;
+            font-size: 16px;
+            margin-bottom: 0px;
         }
 
 
@@ -2521,7 +2538,7 @@
 
         }
 
-
+       
 
         .join-venture-section.about-us-join-venture {
             padding: 60px 0px 80px 0px;
@@ -2768,7 +2785,7 @@
 
         .join-venture-section {
             background-color: #000;
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             padding: 30px 0px;
@@ -5261,8 +5278,20 @@
 
         footer .social-icons a {
             font-size: 1.5rem;
-            margin: 0 12px;
+                margin: 0 0px;
             color: #fff;
+        }
+         footer .social-icons a svg{
+           transition: 0.3s;
+        }
+        footer .social-icons a:hover svg{
+            fill: #c39a38;
+        }
+
+        .social-icons{
+                    display: flex;
+    align-items: flex-start;
+    gap: 15px;
         }
 
         footer .social-icons a:hover {
@@ -5887,7 +5916,7 @@ padding: 12px 12px;
             color: #c39a38;
         }
 
-        .projects-list-section-inner-heading-right span {
+        .projects-list-section-inner-heading-right h2 span {
             color: #c39a38;
         }
 
@@ -6289,6 +6318,7 @@ padding: 12px 12px;
             font-size: 16px;
             font-weight: 500;
             line-height: 26px;
+              height: 80px;
         }
 
         .tesM-profile-bottom {
@@ -7086,6 +7116,50 @@ padding: 12px 12px;
             padding: 20px;
             width: 450px;
         }
+        .history-view-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f6f6f6;
+            border-radius: 20px;
+            flex-direction: column;
+            padding: 20px;
+            width: 450px;
+        }
+
+        .history-view-model-inner section{
+transform: scale(0.95);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0.75rem;
+    z-index: 1800;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+        }
+
+        .history-view-model-inner{
+            display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    overscroll-behavior-y: none;
+    z-index: 5600;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    align-items: center;
+        }
 
         .attachment-view-model-popup.showModel .attachment-view-model-inner section {
             transform: scale(1);
@@ -7105,6 +7179,10 @@ padding: 12px 12px;
             transform: scale(1);
             opacity: 1;
         }
+        .history-view-model-popup.showModel .history-view-model-inner section {
+            transform: scale(1);
+            opacity: 1;
+        }
 
         .download-view-model-popup.showModel .download-view-model-inner section {
             transform: scale(1);
@@ -7115,8 +7193,30 @@ padding: 12px 12px;
             width: 14px;
             height: 14px;
         }
+        .close_downlods_view svg {
+            width: 14px;
+            height: 14px;
+        }
+        .close_history_view svg {
+            width: 14px;
+            height: 14px;
+        }
 
         .close_attachment_view {
+            border: none;
+            background: none;
+            outline: none;
+            position: absolute;
+            right: 28px;
+            top: 28px;
+            background: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 5px;
+        }
+        .close_downlods_view {
             border: none;
             background: none;
             outline: none;
@@ -7137,6 +7237,20 @@ padding: 12px 12px;
         }
 
         .close_video_view {
+            border: none;
+            background: none;
+            outline: none;
+            position: absolute;
+            right: 28px;
+            top: 28px;
+            background: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 5px;
+        }
+        .close_downlods_view {
             border: none;
             background: none;
             outline: none;
@@ -7273,6 +7387,11 @@ padding: 12px 12px;
             color: #000;
             font-weight: 600;
         }
+                .history-view-box-header h3 {
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: 600;
+                }
 
         .close_action_view {
             border: none;
@@ -7293,6 +7412,15 @@ padding: 12px 12px;
             align-items: center;
             justify-content: center;
         }
+        .close_history_view {
+            border: none;
+            background: none;
+            outline: none;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         .action-view-box-header {
             display: flex;
@@ -7303,6 +7431,13 @@ padding: 12px 12px;
         }
 
         .downlods-view-box-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+        .history-view-box-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -7349,6 +7484,12 @@ padding: 12px 12px;
         }
 
         .downlods-view-model-popup.showModel .downlods-view-model-inner {
+            opacity: 1;
+            visibility: visible;
+            overflow: hidden;
+            align-items: center;
+        }
+        .history-view-model-popup.showModel .history-view-model-inner {
             opacity: 1;
             visibility: visible;
             overflow: hidden;
@@ -7409,6 +7550,12 @@ padding: 12px 12px;
         }
 
         .downlods-view-model-popup.showModel .downlods-view-model-popup-backdrop {
+            opacity: 1;
+            visibility: visible;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+        .history-view-model-popup.showModel .history-view-model-popup-backdrop {
             opacity: 1;
             visibility: visible;
             overflow: hidden;
@@ -8308,6 +8455,19 @@ padding: 12px 12px;
         }
 
         .downlods-view-model-popup-backdrop {
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.48);
+            z-index: 5600;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .history-view-model-popup-backdrop {
             opacity: 0;
             visibility: hidden;
             overflow: hidden;
@@ -9551,6 +9711,11 @@ padding: 12px 12px;
             fill: #fff;
         }
 
+        .social-icons a svg{
+            width: 32px;
+            height: 32px;
+            fill: #fff;
+        }
      
 
         .navbar-toggler {

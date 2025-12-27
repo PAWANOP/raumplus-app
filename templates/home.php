@@ -76,7 +76,7 @@ Template Name: Home Page
 <section class="section-padding why-choose">
     <div class="container">
         <h2 class="section-title"><?php echo get_field('section_3_heading'); ?></h2>
-        <div class="row">
+        <div class="row owl-carousel-why-choose">
             <?php
             if (have_rows('section_3_listing')) {
                 while (have_rows('section_3_listing')) {
@@ -2232,7 +2232,7 @@ Template Name: Home Page
                             <p>The panels and surfaces shown are only a selection of the range. For further options,
                                 please contact your <a href="/dealer-search"> specialist dealer.</a></p>
                             <div class="download_pdf_awards">
-                                <a href="" class="btn_1">
+                                <a href="" class="btn_1 call_downlods">
                                     <span class="btn-inner">
                                         <span class="svg-span"><svg xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 640 640">
@@ -2782,20 +2782,6 @@ Template Name: Home Page
         </div>
     </div>
 </section>
-<style>
-    .e-rating-wrapper .start-inner svg {
-        width: 16px;
-        height: 16px;
-        fill: #ffffff;
-        /* white for empty */
-        transition: fill 0.3s ease;
-    }
-
-    .e-rating-wrapper .start-inner.filled svg {
-        fill: #FFD700;
-        /* gold for filled stars */
-    }
-</style>
 <?php
 
 get_footer('footer');
