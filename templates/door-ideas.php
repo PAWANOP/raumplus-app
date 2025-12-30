@@ -84,7 +84,7 @@ Template Name: Door Ideas
     </div>
 </section>
 
-<section class="section-padding why-choose doots-ideas-main-why-choose">
+<section class="section-padding door-ideas-why-choose why-choose doots-ideas-main-why-choose">
     <div class="container">
         <h2 class="section-title"><?php echo get_field('section_2_heading'); ?></h2>
         <div class="row">

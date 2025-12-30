@@ -136,6 +136,7 @@ Template Name: About us
                             <div class="elementor-timeline-year"> <span><?php echo get_sub_field('section_4_listing_title'); ?></span></div>
                             <div class="elementor-timeline-content">
                                 <div class="elementor-timeline-description"><?php echo get_sub_field('section_4_listing_description'); ?></div>
+                                <a class="read-more-link">Read more</a>
                             </div>
                         </div>
                 <?php }
@@ -170,13 +171,12 @@ Template Name: About us
                                     </div>
                                     <div class="heading-faq faq-list-content-inner-top">
                                         <div class="heading-faq-left">
-                                            <!-- <span>01</span> -->
                                             <h5><?php echo get_sub_field('section_5_listing_title'); ?></h5>
                                         </div>
-                                        <!-- <span class="arrowSvg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M342.6 81.4C330.1 68.9 309.8 68.9 297.3 81.4L137.3 241.4C124.8 253.9 124.8 274.2 137.3 286.7C149.8 299.2 170.1 299.2 182.6 286.7L288 181.3L288 552C288 569.7 302.3 584 320 584C337.7 584 352 569.7 352 552L352 181.3L457.4 286.7C469.9 299.2 490.2 299.2 502.7 286.7C515.2 274.2 515.2 253.9 502.7 241.4L342.7 81.4z"/></svg></span> -->
                                     </div>
                                     <div class="heading-faq faq-list-content-inner-bottom">
                                         <p><?php echo get_sub_field('section_5_listing_description'); ?></p>
+                                        <a class="read-more-link">Read more</a>
                                     </div>
                                 </div>
                         <?php }
@@ -606,6 +606,31 @@ Template Name: About us
         </div>
     </div>
 </section>
+<div class="history-view-model-popup">
+    <div class="history-view-model-popup-backdrop"></div>
+    <div>
+        <div class="history-view-model-inner">
+            <section>
+                <div class="history-view-box">
+                    <div class="history-view-box-header">
+                        <h3>Talk to a designer</h3>
+                        <button class="close_history_view">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="history-view-box-body" id="total_history">
+                         
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
 <?php
 get_footer('footer');
 ?>

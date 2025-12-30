@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class=" footer_bottom_parent">
+        <div class="footer_bottom_parent">
             <!-- <div class="container">      -->
             <div class="footer_bottom">
                 <h2>Raumplus</h2>

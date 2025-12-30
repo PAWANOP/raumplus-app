@@ -3634,7 +3634,7 @@
         .gallery-design-4grid .projects-list-gallery-b-box .projects-list-gallery-b-box-text h3{
                    color: white;
     text-align: center;
-    margin: 0 0 5px 0;
+    margin: 0 0 20px 0;
         line-height: 25px;
         }
 
@@ -3648,7 +3648,7 @@
             -webkit-opacity: 1;
             filter: alpha(opacity=0);
              visibility: visible;
-               transform: translateY(68px);
+               transform: translateY(80px);
 
             -ms-transition: all .5s ease;
             -o-transition: all .5s ease;
@@ -6299,20 +6299,7 @@ padding: 12px 12px;
             align-items: center;
         }
 
-        /* .testimonials-list-section-inner-heading-left{
-            border-top: 1px solid #e2e2e2;
-            padding-top: 37px;
-            padding-bottom: 80px;
-            padding-right: 80px;
-            border-right: 1px solid #e2e2e2;
-        } */
-        /* .projects-list-section-inner-heading-left{
-            border-top: 1px solid #e2e2e2;
-            padding-top: 37px;
-            padding-bottom: 80px;
-            padding-right: 80px;
-            border-right: 1px solid #e2e2e2;
-        } */
+       
 
         .tesM-list-section-i-box-bottom-p p {
             font-size: 16px;
