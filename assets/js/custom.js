@@ -201,7 +201,19 @@ $(document).on("click", "#tvTVsliding  .projects-list-gallery-b-box a", function
   return false;
 });
 
-$(document).on("click", ".filter-buttons button", function() {
+$(document).on("click", "projects-list-gallery gallery-design-4grid .filter-buttons button", function() {
+  $(".filter-buttons button").removeClass("active");
+  $(this).addClass("active");
+  let filterText = $(this).attr("data-filter");
+  if (filterText == "all") {
+    $(".projects-list-gallery-b-box").removeClass("d-none");
+  } else {
+    $(".projects-list-gallery-b-box").addClass("d-none");
+    $(".projects-list-gallery-b-box." + filterText).removeClass("d-none");
+  }
+});
+
+$(document).on("click", "projects-list-gallery gallery-design-3grid  .filter-buttons button", function() {
   $(".filter-buttons button").removeClass("active");
   $(this).addClass("active");
   let filterText = $(this).attr("data-filter");
@@ -316,6 +328,26 @@ owl.owlCarousel({
   margin: 20,
   loop: true,
   nav: true,
+    responsive: {
+    0: {
+      items: 1,
+    },
+    480 : {
+      items: 2,
+    },
+    481 : {
+      items: 2,
+    },
+    767: {
+      items: 3,
+    },
+    1200: {
+      items: 4,
+    }
+    ,1800: {
+      items: 4,
+    }
+  },
 });
 
 var owl = $(".owl-carousel-blog-main");
@@ -332,6 +364,26 @@ $(".blogGallery").owlCarousel({
   margin: 25,
   nav: true, // Enable manual navigation with prev/next buttons
   autoplay: true, // Enable auto-scrolling
+    responsive: {
+    0: {
+      items: 1,
+    },
+    480 : {
+      items: 2,
+    },
+    481 : {
+      items: 2,
+    },
+    767: {
+      items: 3,
+    },
+    1200: {
+      items: 4,
+    }
+    ,1800: {
+      items: 4,
+    }
+  },
 });
 
 
@@ -402,14 +454,14 @@ owl4.owlCarousel({
     owl4.trigger('prev.owl.carousel', [300]); // ✅ correct syntax
   });
 
-var owl4 = $(".owl-carousel-why-choose");
-owl4.owlCarousel({
-   items: 3,
-   margin: 25,
-   loop: true,
-   nav: false,
-   dots: false
-});
+// var owl4 = $(".owl-carousel-why-choose");
+// owl4.owlCarousel({
+//    items: 3,
+//    margin: 25,
+//    loop: true,
+//    nav: false,
+//    dots: false
+// });
   
 });
 

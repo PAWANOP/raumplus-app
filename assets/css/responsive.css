@@ -141,11 +141,58 @@
 }
 
 @media (max-width: 1045px) {
-.why-choose.doots-ideas-main-why-choose {
-    padding-top: 30px;
-}
+   .popular-category-list-left {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .popular-category-list-l-b {
+      height: 170px;
+   }
+
+   .why-choose.doots-ideas-main-why-choose {
+      padding-top: 30px;
+   }
+
+   .blog-video-section-inner {
+      flex-direction: column;
+      ;
+      gap: 20px;
+   }
+
+   .blog-video-section-inner-left {
+      width: 100%;
+   }
+
+   .blog-video-section-inner-right {
+      width: 100%;
+   }
+
+   .blog-list-section-inner-box-top {
+      height: unset;
+   }
+
+   .blogMainSection .right-blog-box .right-side-CTA {
+      align-items: flex-start;
+   }
+
+   .blog-video-section-inner-right {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .blog-list-section-parent-box {
+      flex-direction: column;
+   }
+
    .contact-info-inner-bottom {
       flex-direction: column;
+   }
+
+   .left-blog-box {
+      width: 100%;
+   }
+
+   .right-blog-box {
+      width: 100%;
    }
 
    .contact-info-inner-bottom-left {
@@ -265,11 +312,44 @@
       font-size: 30px;
       line-height: 40px;
    }
+
+   .gallery-design-4grid .projects-list-gallery-b-inner {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .wardrobe-design-filter .projects-list-gallery-b-inner {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .wardrobe-design-4grid .intelligent-list-section-inner-body .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .doots-ideas-main-why-choose .container .row {
+      display: flex;
+   }
+
+   .blog-gallery-section.light_grey {
+      padding: 30px 0;
+   }
+
+   .blog-detail-parent .action-view-box-body {
+      width: 100%;
+   }
+
+   .blog-list-section-parent-box .recent-blog-list-parent {
+      height: 95px;
+   }
+
+   .right-side-CTA {
+      align-items: flex-start;
+   }
 }
 
 @media (max-width: 960px) {
    .doots-ideas-main-why-choose .container .row {
-      display: grid;
+      display: flex;
       grid-template-columns: 1fr 1fr;
       row-gap: 20px;
    }
@@ -294,6 +374,8 @@
 }
 
 @media (max-width: 900px) {
+
+
    .faq-list-content-right {
       flex-wrap: wrap;
       justify-content: center;
@@ -319,6 +401,14 @@
 }
 
 @media (max-width: 792px) {
+   .gallery-design-4grid .projects-list-gallery-b-inner {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .wardrobe-design-filter .projects-list-gallery-b-inner {
+      grid-template-columns: 1fr 1fr;
+   }
+
    #cooperation .upper-side-top-images {
       width: 100%;
    }
@@ -351,6 +441,44 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+   .gallery-design-4grid .projects-list-gallery-b-box .projects-list-gallery-b-box-text {
+
+      transform: translateY(50px);
+
+   }
+
+   .about-us-more {
+      margin-top: 1rem;
+   }
+
+   .about-us-section-left .heading-text h2 {
+      font-size: 30px;
+   }
+
+   .about-us-section-left .heading-text {
+      margin-bottom: 1rem;
+   }
+
+   .about-us-section-left .listing-style {
+      margin-bottom: 1rem;
+   }
+
+   .about-us-section-inner {
+      gap: 30px;
+   }
+
+   .about-us-section-inner {
+      flex-direction: column;
+   }
+
+   .about-us-section-left {
+      width: 100%;
+   }
+
+   .about-us-section-right {
+      width: 100%;
+   }
+
    .carousel-caption h1 {
       font-size: 1.8rem;
    }
@@ -398,10 +526,70 @@
    .images-box-faq-content-1 .images-box-faq-content-1-inner {
       display: flex;
    }
+
+   .doots-ideas-main-why-choose .why-choose-item {
+      height: unset;
+   }
+
+   .wardrobe-design-4grid .intelligent-list-section-inner-body .row {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .about-us-section-right-inner img {
+      height: unset;
+   }
+
+   .blog-list-section-inner-body {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .blogMainSection .blog-list-section-inner-box-top {
+      height: unset;
+   }
+
+   .blog-gallery-section .blog-gallery-section-inner-left {
+      flex-direction: column;
+   }
+
+   .blog-video-section-inner-right {
+      grid-template-columns: 1fr;
+   }
+
+   .popular-category-list-left {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .blog-gallery-section-inner-left {
+
+      gap: 20px;
+   }
+
 }
 
 
 @media (max-width: 575px) {
+   .article-body blockquote:before {
+
+      top: 30px;
+
+   }
+
+   .article-body blockquote {
+
+      padding: 5px 20px 110px;
+      margin: 15px 0 0px;
+
+      padding-top: 50px;
+   }
+
+   .left-blog-box article h3 {
+      font-size: 20px;
+   }
+
+   .blog-list-section-inner-body {
+      grid-template-columns: 1fr;
+   }
+
    .application-list-section .process-section-card-box-inner {
       grid-template-columns: 1fr;
    }
@@ -424,16 +612,25 @@
 
    .call_to_action_parent {
       flex-direction: column;
-              align-items: flex-start;
-                      gap: 20px;
+      align-items: flex-start;
+      gap: 20px;
    }
+
    .partitionWalls_readMore {
-    padding-bottom: 30px;
-}
+      padding-bottom: 30px;
+   }
 }
 
 @media (max-width: 480px) {
+   .popular-category-list-left {
+      grid-template-columns: 1fr;
+   }
+
    .doots-ideas-main-why-choose .container .row {
+      grid-template-columns: 1fr;
+   }
+
+   .wardrobe-design-filter .projects-list-gallery-b-inner {
       grid-template-columns: 1fr;
    }
 
@@ -441,14 +638,26 @@
       height: unset;
    }
 
+   .cateogory-wise-tab-list a {
+      font-size: 12px;
+   }
+
+   .blog-list-section-parent-box {
+      gap: 1rem;
+   }
+
+   .popular-category-list-l-b {
+      height: 250px;
+   }
+
    h1 {
-      font-size: 30px !important;
-      line-height: 1.1 !important;
+      font-size: 25px !important;
+      line-height: 1.3 !important;
    }
 
    h2 {
-      font-size: 25px !important;
-      line-height: 1.2 !important;
+      font-size: 20px !important;
+      line-height: 1.4 !important;
    }
 
    .hotline-section-body-box-right-h h3 {
@@ -525,6 +734,10 @@
       padding: 20px;
    }
 
+   .attahcmentImageView {
+      width: 75%;
+   }
+
    .contact-info-inner-bottom-right-1,
    .contact-info-inner-bottom-right-2 {
       gap: 20px;
@@ -539,22 +752,23 @@
    }
 
    .carousel-item {
-    height: 50vh;
-}
+      height: 50vh;
+   }
 
-.awards-carousel .image-container .image-container-inner {
-    position: relative;
-    width: 100%;
-}
+   .awards-carousel .image-container .image-container-inner {
+      position: relative;
+      width: 100%;
+   }
 
-.image-container img{
-           height: 100%;
-           width: 100% !important;
-}
-    .awards-carousel .image-container {
-        max-width: 100%;
-            width: 100%;
-    }
+   .image-container img {
+      height: 100%;
+      width: 100% !important;
+   }
+
+   .awards-carousel .image-container {
+      max-width: 100%;
+      width: 100%;
+   }
 
    .aboutUsContainer {
       height: unset;
@@ -574,11 +788,32 @@
       width: 95%;
    }
 
-   .three-slider-box .owl-nav{
-          margin-top: 1rem;
+   .three-slider-box .owl-nav {
+      margin-top: 1rem;
    }
-   .call_to_action {
-    padding: 20px 0px;
 
+   .call_to_action {
+      padding: 20px 0px;
+   }
+
+   .wardrobe-design-4grid .intelligent-list-section-inner-body .row {
+      grid-template-columns: 1fr;
+   }
+
+   .gallery-design-4grid .projects-list-gallery-b-inner {
+      grid-template-columns: 1fr;
+   }
+
+   .blog-gallery-section-inner-right {
+      width: 100%;
+   }
+   .faq-question-section-body-first-bottom li {
+    padding: 10px 10px 10px 10px;
 }
+}
+
+@media (max-width: 380px) {
+   .popular-category-list-l-b {
+      height: 220px;
+   }
 }
