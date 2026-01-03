@@ -141,6 +141,9 @@
 }
 
 @media (max-width: 1045px) {
+    .call_to_action_home {
+    padding-bottom: 30px;
+}
    .popular-category-list-left {
       grid-template-columns: 1fr 1fr 1fr;
    }
@@ -275,9 +278,9 @@
       width: 100%;
    }
 
-    .form-section-bottom-side-inner .ajax-contact-form {
+   .form-section-bottom-side-inner .ajax-contact-form {
       width: 100%;
-    }
+   }
 
    .form-section-h2 h2 {
       max-width: 100%;
@@ -379,6 +382,21 @@
 
 @media (max-width: 900px) {
 
+   .call_to_action_home .call_to_action_parent .call_to_action_left {
+        width: 100%;
+   }
+
+   .call_to_action_home .call_to_action_parent .call_to_action_left{
+          border-radius: 24px 24px 24px 24px;
+   }
+
+   .call_to_action_home .call_to_action_parent .call_to_action_left::before {
+    border-radius: 24px 24px 24px 24px;
+}
+
+   .call_to_action_home .call_to_action_right{
+      display: none;
+   }
 
    .faq-list-content-right {
       flex-wrap: wrap;
@@ -401,6 +419,37 @@
 
    #fact_figure .faq-list-section-images-left-img {
       height: unset;
+   }
+}
+
+@media (max-width: 850px) {
+   .images-box-faq-content-1-left {
+    width: 100%;
+   }
+   .images-box-faq-content-1-right {
+    width: 100%;
+}
+   .individual-material-inspiration-ibox {
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+   }
+   .services-right-side-bottom {
+    gap: 20px;
+    flex-direction: column;
+            align-items: flex-start;
+}
+
+   .individual-material-inspiration-ibox .left-side-faq {
+      width: 100%;
+   }
+
+   .individual-material-inspiration-ibox .right-side-content {
+      width: 100%;
+   }
+
+   .images-box-faq-content-1 .images-box-faq-content-1-inner {
+      flex-direction: column;
    }
 }
 
@@ -626,6 +675,15 @@
 }
 
 @media (max-width: 480px) {
+       .images-box-faq-content-1-right {
+        height: 250px;
+    }
+  .grid-box-container-inner {
+    width: 100%;
+}
+   .grid-box-container {
+   flex-direction: column;
+}
    .popular-category-list-left {
       grid-template-columns: 1fr;
    }
@@ -811,9 +869,10 @@
    .blog-gallery-section-inner-right {
       width: 100%;
    }
+
    .faq-question-section-body-first-bottom li {
-    padding: 10px 10px 10px 10px;
-}
+      padding: 10px 10px 10px 10px;
+   }
 }
 
 @media (max-width: 380px) {

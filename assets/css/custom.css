@@ -8949,6 +8949,7 @@ transform: scale(0.95);
         .grid-box-container-inner-image img {
             border-radius: 25px;
             border: 1px solid #dbdbdb;
+            width: 100%;
         }
 
         .mySwiper {
@@ -9092,13 +9093,12 @@ transform: scale(0.95);
 
         .video-slider-section-box iframe{
             width: 100%;
-            height: 250px;
+       height: 100%;
             border-radius: 12px;
         }
         .images-box-faq-content-1-right iframe{
             width: 100%;
             height: 100%;
-            /* border-radius: 12px; */
         }
 
         .mySwiper .swiper-slide-thumb-active {

@@ -29,7 +29,7 @@ Template Name: references
             <div class="testimonials-list-section-inner-heading">
                 <div
                     class="testimonials-list-section-inner-heading-right">
-                    <h2><?php echo get_field('section_1_heading'); ?><span> <?php echo get_field('section_1_color_heading'); ?></span></h2>
+                    <h1 class="h1_heading"><?php echo get_field('section_1_heading'); ?><span> <?php echo get_field('section_1_color_heading'); ?></span></h1>
                 </div>
             </div>
             <div class="references-section-body">

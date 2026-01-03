@@ -23,7 +23,7 @@ Template Name: quality
 <section id="madeGerman" class="section-padding madeInGerman">
     <div class="container">
         <div class="madeInGerman-header">
-            <h2>Furniture - <span> Made in Germany</span></h2>
+            <h1 class="h1_heading">Furniture - <span> Made in Germany</span></h1>
         </div>
         <div class="madeInGerman-body">
             <div class="madeInGerman-body-image">

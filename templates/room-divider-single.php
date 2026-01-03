@@ -1,6 +1,7 @@
 <?php
 get_header('header');
 /*
+Template Post Type: room_divider
 Template Name: room divider
 */
 ?>
