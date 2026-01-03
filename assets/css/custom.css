@@ -581,9 +581,11 @@
             width: 50%;
         }
 
-        .form-section-bottom-side-inner .ajax-contact-form ,
-        .form-section-bottom-right {
+        .form-section-bottom-side-inner .ajax-contact-form {
             width: 50%;
+        }
+        .form-section-bottom-right {
+            width: 100%;
         }
 
         .form-section-h2 h2 {
